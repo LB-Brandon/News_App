@@ -5,5 +5,5 @@ import retrofit2.http.GET
 
 interface NewsService {
     @GET("https://news.google.com/rss?hl=ko&gl=KR&ceid=KR:ko")
-    fun mainFeed(): Call<NewsEntity>
+    fun mainFeed(): Call<NewsRss>
 }
